@@ -11,14 +11,12 @@ public class FibonacciService {
             return 0;
         else if (number == 1)
             return 1;
-
-        if (fib(n) == number)
+        else if (fib(n) == number)
             return n;
         else if (fib(n) > number)
-            return n = -1;
+            return -1;
         else fib(n++);
-
-        return getFibonacciIndex(number);
+            return getFibonacciIndex(number);
     }
 
     private int fib(int n) {
